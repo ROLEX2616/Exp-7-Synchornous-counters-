@@ -46,15 +46,41 @@ This type of counter is normally referred to as a Down Counter, (CTD). In a bina
 
 4-bit Count Down Counter
 ### Procedure
-/* write all the steps invloved */
+
+1.	Create a New Project:
+Open Quartus and create a new project by selecting "File" > "New Project Wizard."
+Follow the wizard's instructions to set up your project, including specifying the project name, location, and target device (FPGA).
+2.	Create a New Design File:
+
+Once the project is created, right-click on the project name in the Project Navigator and select "Add New File."
+Choose "Verilog HDL File" or "VHDL File," depending on your chosen hardware description language.
+3.	Write the Combinational Logic Code:
+
+Open the newly created Verilog or VHDL file and write the code for your combinational logic.
+4.	Compile the Project:
+To compile the project, click on "Processing" > "Start Compilation" in the menu.
+Quartus will analyze your code, synthesize it into a netlist, and perform optimizations based on your target FPGA device.
+5.	Analyze and Fix Errors:
+
+If there are any errors or warnings during the compilation process, Quartus will display them in the Messages window.
+Review and fix any issues in your code if necessary.
+View the RTL diagram.
+6.	Verification:
+Click on "File" > "New" > "Verification/Debugging Files" > "University Program VWF".
+Once Waveform is created Right Click on the Input/Output Panel > " Insert Node or Bus" > Click on Node Finder > Click On "List" > Select All.
+ 
+Give the Input Combinations according to the Truth Table amd then simulate the Output Waveform.
+
 
 
 
 ### PROGRAM 
-/*
+
+![image](https://github.com/ROLEX2616/Exp-7-Synchornous-counters-/assets/149988469/e153c0b4-80ad-4bb2-ada7-a9af9cd555ff)
+
 Program for flipflops  and verify its truth table in quartus using Verilog programming.
-Developed by: 
-RegisterNumber:  
+Developed by:Kavinraj.S
+RegisterNumber:23011639
 */
 
 
@@ -63,6 +89,17 @@ RegisterNumber:
 
 
 ### RTL LOGIC UP COUNTER AND DOWN COUNTER  
+
+
+Down Counter 
+![image](https://github.com/ROLEX2616/Exp-7-Synchornous-counters-/assets/149988469/4e131073-f05b-4b3f-a664-c749c16a46b8)
+
+
+
+
+Up Counter
+![image](https://github.com/ROLEX2616/Exp-7-Synchornous-counters-/assets/149988469/6536d62a-2a12-4340-9d1b-9c111c06fbfb)
+
 
 
 
@@ -74,11 +111,37 @@ RegisterNumber:
 
 ### TIMING DIGRAMS FOR COUNTER  
 
+Down Counter
+
+
+![image](https://github.com/ROLEX2616/Exp-7-Synchornous-counters-/assets/149988469/633d9ad1-e3aa-4cdf-944f-dd710d8d6304)
+
+
+
+UP Counter
+
+![image](https://github.com/ROLEX2616/Exp-7-Synchornous-counters-/assets/149988469/832dff0b-73b8-4466-8491-60f8d3f3f8e4)
 
 
 
 
-### TRUTH TABLE 
+
+
+
+### TRUTH TABLE
+ Down Counter and Up Counter
+
+ ![image](https://github.com/ROLEX2616/Exp-7-Synchornous-counters-/assets/149988469/ab2bce08-6de2-42f0-846c-db6c1f019268)
+
+
+
+
+
+
+## RESULT:
+By this we have verified the truth table of 4-bit up-counter using verilog.
+
+
 
 
 
